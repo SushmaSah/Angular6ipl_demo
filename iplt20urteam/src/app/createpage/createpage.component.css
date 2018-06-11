@@ -1,0 +1,93 @@
+table#t01 tr:nth-child(even) {
+    background-color:  #cce2f7 ;
+}
+table#t01 tr:nth-child(odd) {
+   background-color:  #bbcdde ;
+}
+table#t01 th {
+    background-color:  #6f7b87 ;
+}
+
+table#t01 thead { display: block; }
+table#t01 tbody { display: block; }
+
+/*table#t01 thead, table#t01 tbody{ display: block; }*/
+
+table#t01 tbody {
+    height: 600px;       /* Just for the demo          */
+    overflow-y: auto;    /* Trigger vertical scroll    */
+    overflow-x: hidden;  /* Hide the horizontal scroll */
+}
+
+table#t02 tr:nth-child(even) {
+    background-color: #81bff9  ;
+}
+table#t02 tr:nth-child(odd) {
+   background-color: #1588f5  ;
+}
+table#t02 th {
+    background-color: #0f60ac ;
+}
+
+div.ex1 {
+    background-color: lightblue;
+    
+    height: 540px;
+    overflow: scroll;
+}
+
+ul#menu li {
+    display:inline;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1-content a:hover {background-color: #ddd}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+.dropdown1:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+.btn-group#btSB:hover .dropdown-menu {
+    display: block;
+}
+.btn-group#btFS:hover .dropdown-menu {
+    display: block;
+}
+.btn-group#btOL:hover .dropdown-menu {
+    display: block;
+}
+.btn-group#btUQ:hover .dropdown-menu {
+    display: block;
+}

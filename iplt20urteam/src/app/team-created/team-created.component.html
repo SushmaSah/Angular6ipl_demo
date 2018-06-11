@@ -1,0 +1,31 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-3" style="text-align: center; color: #0900c7">
+      		<h4>{{selectedTeamName}}</h4>
+      	</div>
+      	<div *ngIf="editbtn" class="col-md-3" style="text-align: center; color: #0900c7">
+      		<input type="button" (click)="edit()" value="Edit"/>
+      		<input type="button" (click)="Delete()" value="Delete"/>
+      	</div>
+      	<div class="col-md-6" style="text-align: center; color: #0900c7">
+      		
+      	</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="media" *ngFor= "let team of selectedTeam">
+			    <div class="media-left">
+			      <p><strong>{{team.name}}</strong></p>
+			    </div>
+			    <div class="media-body">
+			      <h4 class="media-heading">{{team.team}}</h4>
+			      <p>{{team.role}}</p>
+			      <p>{{team.Nationality}}</p>
+			      <p>{{team.cost}}</p>
+			    </div>
+		    </div>
+		    <hr>
+		</div>
+	</div>
+</div>
